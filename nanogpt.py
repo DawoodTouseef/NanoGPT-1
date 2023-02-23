@@ -1,5 +1,5 @@
 import torch
-from gpt import GPTLanguageModel
+from gpt import GPTLanguageModel,encode,decode
 # Define your PyTorch model
 model = GPTLanguageModel()
 
@@ -10,7 +10,7 @@ model.eval()
 
 # Prepare input data for prediction
 inp=input("Enter the message:")
-input_data = torch.zeroes(inp)
+input_data = encode(inp)
 input_tensor = torch.tensor(input_data, dtype=torch.long)
 
 # Make a prediction
