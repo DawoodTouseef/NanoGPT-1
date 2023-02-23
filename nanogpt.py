@@ -1,5 +1,5 @@
 import torch
-from gpt
+from gpt import GPTLanguageModel
 # Define your PyTorch model
 model = GPTLanguageModel()
 
